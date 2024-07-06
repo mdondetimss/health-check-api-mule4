@@ -15,6 +15,44 @@ You should have basic understanding of Mule4 developement or an significant back
 We need an API ```demo-api``` with ```/health``` resource to demostrate our first working API development.
 
 # API Development
+| Roles                                      | Modules                            | API Lifecycle | Activities                              | Status | Notes | Resources | URLs |
+|--------------------------------------------|------------------------------------|---------------|-----------------------------------------|--------|-------|-----------|------|
+| Designer & Product Owner                   | Design Center & Anypoint Studio    | Design        | Define Datatypes                        |        |       |           |      |
+|                                            |                                    |               | Add security schemas                    |        |       |           |      |
+|                                            |                                    |               | Add resources                           |        |       |           |      |
+|                                            |                                    |               | Add metadata information                |        |       |           |      |
+| Designer, Developer & Product Owner        | Design Center & Anypoint Studio    | Prototype     | Add mocking service                     |        |       |           |      |
+|                                            |                                    |               | Define data examples                    |        |       |           |      |
+|                                            |                                    |               | Define test cases                       |        |       |           |      |
+|                                            |                                    |               | Share with consumers                    |        |       |           |      |
+| Integration Architect, Designer, Developer & Product Owner | Design Center, Exchange & Anypoint Studio | Validate | Consume mocking service                 |        |       |           |      |
+|                                            |                                    |               | Feedback on API usage                   |        |       |           |      |
+|                                            |                                    |               | Build test cases                        |        |       |           |      |
+| Integration Architect, Developer           | Anypoint Studio                    | Develop       | Connect to backend                      |        |       |           |      |
+|                                            |                                    |               | Develop resources                       |        |       |           |      |
+|                                            |                                    |               | Implement business logic                |        |       |           |      |
+| Integration Architect, Developer, Tester   | Anypoint Studio                    | Test          | Create mocking scenarios                |        |       |           |      |
+|                                            |                                    |               | Define validations                      |        |       |           |      |
+|                                            |                                    |               | Coverage analysis (MUnit)               |        |       |           |      |
+|                                            |                                    |               | Integrate into CI/CD pipeline           |        |       |           |      |
+| DevOps Engineer, Developer, IT Operation   | Runtime Manager & Anypoint Studio  | Deploy        | Hybrid, cloud or on-premise             |        |       |           |      |
+|                                            |                                    |               | Via CI/CD                               |        |       |           |      |
+|                                            |                                    |               | Manage environments                     |        |       |           |      |
+|                                            |                                    |               | Manage servers, groups etc.             |        |       |           |      |
+| Product Owner, IT Operation, IT Security Specialist | API Manager               | Secure        | Add security policies                   |        |       |           |      |
+|                                            |                                    |               | Define custom policies                  |        |       |           |      |
+|                                            |                                    |               | Add SLA-based access                    |        |       |           |      |
+|                                            |                                    |               | Analyse usage                           |        |       |           |      |
+| DevOps Engineer, IT Operation, IT Security Specialist | APIM & RM & Monitoring & Visualizer | Operate | Load balancing                          |        |       |           |      |
+|                                            |                                    |               | Scale In & Scale Out                    |        |       |           |      |
+|                                            |                                    |               | Monitor APIs                            |        |       |           |      |
+|                                            |                                    |               | Define Alerts                           |        |       |           |      |
+| Consumer, IT Operation, IT Security Specialist | Exchange & Management Center | Feedback      | Reuse & Share                            |        |       |           |      |
+|                                            |                                    |               | Rate & Comment                          |        |       |           |      |
+|                                            |                                    |               | Analyze, Secure & Operate               |        |       |           |      |
+|                                            |                                    |               | Report & Feedback                       |        |       |           |      |
+
+
 Any API development needs couple of steps:
 - RAML/OAS Specification
 - API Implementation
